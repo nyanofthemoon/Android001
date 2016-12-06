@@ -1,6 +1,7 @@
 package com.app2buzz.spinandwin;
 
 import com.facebook.react.ReactActivity;
+import com.peel.react.rnos.RNOSModule;
 
 import android.content.Intent;
 

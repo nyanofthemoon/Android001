@@ -75,6 +75,7 @@
 		79E0058B495147219B819801 /* libRNUUIDGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AB6AE6AE244C98B6F87C8A /* libRNUUIDGenerator.a */; };
 		61CB736D5AC14CD4A1D227A7 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E11EA8D5778448A190AA940D /* libRNSVG.a */; };
 		F361F68E871D456E82639CEA /* libReactNativeWebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A94D0E7C2B412388404FF4 /* libReactNativeWebp.a */; };
+		12BC16188B204F57A37A9666 /* libRNOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0125D801CAF4BCCB823883E /* libRNOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -246,6 +247,8 @@
 		E11EA8D5778448A190AA940D /* libRNSVG.a */ = {isa = PBXFileReference; name = "libRNSVG.a"; path = "libRNSVG.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		E2005DC318E848BF8D68F4C5 /* ReactNativeWebp.xcodeproj */ = {isa = PBXFileReference; name = "ReactNativeWebp.xcodeproj"; path = "../node_modules/react-native-webp/ReactNativeWebp.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		53A94D0E7C2B412388404FF4 /* libReactNativeWebp.a */ = {isa = PBXFileReference; name = "libReactNativeWebp.a"; path = "libReactNativeWebp.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		E72E15E7D3DC4815B6C02546 /* RNOS.xcodeproj */ = {isa = PBXFileReference; name = "RNOS.xcodeproj"; path = "../node_modules/react-native-os/ios/RNOS.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		F0125D801CAF4BCCB823883E /* libRNOS.a */ = {isa = PBXFileReference; name = "libRNOS.a"; path = "libRNOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +289,7 @@
 				79E0058B495147219B819801 /* libRNUUIDGenerator.a in Frameworks */,
 				61CB736D5AC14CD4A1D227A7 /* libRNSVG.a in Frameworks */,
 				F361F68E871D456E82639CEA /* libReactNativeWebp.a in Frameworks */,
+				12BC16188B204F57A37A9666 /* libRNOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +426,7 @@
 				935E888F0175438AA2B99AEF /* RNUUIDGenerator.xcodeproj */,
 				1FECA129B2E646A08B6EE6C7 /* RNSVG.xcodeproj */,
 				E2005DC318E848BF8D68F4C5 /* ReactNativeWebp.xcodeproj */,
+				E72E15E7D3DC4815B6C02546 /* RNOS.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -834,6 +839,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};
 			name = Debug;
@@ -850,6 +856,7 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpinAndWin.app/SpinAndWin";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -881,6 +888,7 @@
 					"$(SRCROOT)/../node_modules/react-native-uuid-generator/ios",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-webp/**",
+					"$(SRCROOT)/../node_modules/react-native-os/ios",
 				);
 				INFOPLIST_FILE = "SpinAndWin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -917,6 +925,7 @@
 					"$(SRCROOT)/../node_modules/react-native-uuid-generator/ios",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-webp/**",
+					"$(SRCROOT)/../node_modules/react-native-os/ios",
 				);
 				INFOPLIST_FILE = "SpinAndWin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -982,6 +991,7 @@
 					"$(SRCROOT)/../node_modules/react-native-uuid-generator/ios",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-webp/**",
+					"$(SRCROOT)/../node_modules/react-native-os/ios",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1036,6 +1046,7 @@
 					"$(SRCROOT)/../node_modules/react-native-uuid-generator/ios",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-webp/**",
+					"$(SRCROOT)/../node_modules/react-native-os/ios",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;

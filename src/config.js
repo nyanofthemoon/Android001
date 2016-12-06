@@ -3,7 +3,7 @@
 let config = {
 
   application: {
-    version       : '1.1.0',
+    version       : '1.1.2b',
     app_version_id: '1'      //@NOTE API return 301 Moved Permanently if device needs to update application
   },
 
@@ -90,8 +90,8 @@ let config = {
 
 // Development Environment Configurations
 if (true === config.environment.isDevelopment()) {
-  config.db.name            = config.db.name + '_dev2'
-  config.sync.ignore        = true
+  config.db.name            = config.db.name + '_dev4'
+  //config.sync.ignore        = true
   config.sync.participation = 1000000
 }
 
