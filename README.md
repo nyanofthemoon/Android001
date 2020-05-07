@@ -1,6 +1,6 @@
-# SpinAndWin
+# AndroidApp0001
 
-React-Native Hybrid Mobile Application for App2Buzz
+React-Native Hybrid Mobile Application
 
 ## Development Mode
 
